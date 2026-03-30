@@ -1,9 +1,12 @@
-body 
-{
+body  { 
     background-color: green;
-    color:white;
+    color: white;
 }
-#first-div
-{
+
+#first-div {
     background-color: pink;
+}
+.paragraph {
+    color:black !important;
+    font-size: 2rem;
 }
