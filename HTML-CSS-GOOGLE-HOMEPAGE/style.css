@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #0f172a;
+}
+button {
+    cursor: pointer;
+}
+body {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.goggle-header {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.text-link {
+    color: inherit;
+    text-decoration: none;
+}
+.text-link :hover {
+    text-decoration: underline;
+}
+.icon-link {
+    color: inherit;
+    font-size : 1rem;
+    width: 40px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+}
+.icon-link:hover {
+    background: lightgray;
+}
+.img-button {
+  border: none;
+  background: transparent;
+  
+}
+.img-button img {
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 100%;
+}
+main {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+.Title-text{
+    font-size: 3rem;
+}
+.Input-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: 9999px;
+}
+.Input-bar:hover{
+    box-shadow: 0 0 4px 1px lightgray;
+}
+.Input-bar :focus-within{
+    box-shadow: 0 0 4px 1px lightgray;
+}
+.Input-bar input {
+    flex: 1;
+    border: hidden;
+    outline: none;
+    width: 100%;
+}
+.Input-bar div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.input-icon {
+    border: none;
+    background: transparent;
+}
+.input-icon:hover{
+  opacity: 0.6;
+}
+.button-grid {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.button-grid button {
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    background: rgb(247, 247, 247);
+    border-radius: .25rem;
+}
+.button-grid button:hover {
+    box-shadow: 0 0 4px 1px slategray;
+}
+.language-text {
+    font-size: 0.7rem;
+}
+.language-link {
+    color: royalblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+.language-link:hover {
+    text-decoration: underline;
+}
+footer {
+    background: rgb(244, 244, 244);
+    font-size: 0.8rem;
+}
+footer > div{
+    padding: 1rem;
+}
+.footer-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+@media (min-width: 640px) {
+
+}
