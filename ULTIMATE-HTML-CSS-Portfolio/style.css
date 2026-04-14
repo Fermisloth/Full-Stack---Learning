@@ -1,0 +1,19 @@
+:root{
+    --color-accent: #5eead4;
+    --color-highlight: #e2e8f8;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #0f1728;
+    color: #94a3b8;
+    padding: 1rem;
+}
+header h1 {
+    color-var(--color-highlight);
+}
