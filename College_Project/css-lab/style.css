@@ -1,0 +1,57 @@
+/* Base page styling and repeated background image. */
+body {
+  background-color: #fdf2f8;
+  background-image: url('images/pattern.svg');
+  background-repeat: repeat;
+  font-family: Arial, sans-serif;
+  color: #172033;
+}
+
+/* Paragraph class selectors. */
+p.left {
+  text-align: left;
+  color: #1d4ed8;
+  font-family: Cambria;
+  font-size: large;
+  text-indent: 20px;
+}
+
+p.center {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 12px;
+  font-size: larger;
+}
+
+p.right {
+  text-align: right;
+  color: #dc2626;
+  font-family: Tahoma;
+  font-size: 15pt;
+  text-decoration: overline;
+  font-style: italic;
+}
+
+/* ID selector example. */
+b#headline {
+  color: #ea580c;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+/* Experiment 9: link states. */
+a:link { text-decoration: none; color: #ea580c; }
+a:visited { text-decoration: none; color: #b91c1c; }
+a:hover { text-decoration: underline; color: #2563eb; }
+a:active { text-decoration: underline; color: #7c3aed; }
+
+/* Cursor property examples. */
+.cursor-box { padding: 10px; border: 1px solid #ddd; }
+.c1 { cursor: crosshair; }
+.c2 { cursor: pointer; }
+.c3 { cursor: move; }
+.c4 { cursor: text; }
+.c5 { cursor: wait; }
+.c6 { cursor: help; }

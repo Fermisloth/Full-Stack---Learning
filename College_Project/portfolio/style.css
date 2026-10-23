@@ -1,0 +1,49 @@
+/* Experiment 10: portfolio theme variables. */
+:root {
+  --bg: #111827;
+  --card: #1f2937;
+  --text: #f9fafb;
+  --muted: #cbd5e1;
+  --accent: #34d399;
+}
+
+/* Global page styles. */
+* { box-sizing: border-box; scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 Arial, sans-serif; }
+
+/* Header and navigation. */
+header { position: sticky; top: 0; background: #111827ee; backdrop-filter: blur(10px); border-bottom: 1px solid #374151; z-index: 2; }
+nav { max-width: 1000px; margin: auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-weight: bold; color: var(--accent); text-decoration: none; }
+#navLinks { display: flex; gap: 24px; }
+#navLinks a { color: var(--text); text-decoration: none; }
+#menuButton { display: none; background: none; border: 0; color: white; font-size: 24px; }
+
+/* Hero and content sections. */
+.hero, section { max-width: 1000px; margin: auto; padding: 75px 24px; }
+.hero { min-height: 560px; display: grid; align-content: center; }
+.eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: 2px; }
+.hero h1 { font-size: clamp(42px, 8vw, 80px); line-height: 1.05; max-width: 780px; margin: 10px 0; }
+.hero p { max-width: 610px; color: var(--muted); font-size: 19px; }
+
+/* Buttons, skills, and project cards. */
+.button { display: inline-block; background: var(--accent); color: #052e16; border: 0; border-radius: 8px; padding: 11px 18px; margin-top: 12px; text-decoration: none; font-weight: bold; cursor: pointer; }
+h2 { font-size: 34px; }
+.chips, .projects { display: flex; gap: 14px; flex-wrap: wrap; }
+.chips span, .projects article { background: var(--card); border: 1px solid #374151; border-radius: 12px; padding: 12px 16px; }
+.projects article { flex: 1; min-width: 220px; }
+.projects h3 { color: var(--accent); }
+
+/* Contact form. */
+form { max-width: 560px; display: grid; gap: 14px; }
+label { display: grid; gap: 6px; }
+input, textarea { font: inherit; padding: 12px; border: 1px solid #4b5563; background: var(--card); color: var(--text); border-radius: 8px; }
+textarea { min-height: 120px; }
+footer { text-align: center; padding: 30px; color: var(--muted); border-top: 1px solid #374151; }
+
+/* Responsive navigation for small screens. */
+@media (max-width: 650px) {
+  #menuButton { display: block; }
+  #navLinks { display: none; position: absolute; right: 24px; top: 58px; background: var(--card); padding: 15px; flex-direction: column; gap: 8px; }
+  #navLinks.open { display: flex; }
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Lab</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Experiment 8: internal CSS for the page heading and panel background. -->
+    <style>
+      h1 { color: #1d4ed8; text-align: center; }
+      .panel {
+        background-image: url('images/panel.svg');
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding: 20px;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="panel">
+      <h1>CSS Inline, Internal and External</h1>
+
+      <!-- Class selector examples from the external stylesheet. -->
+      <p>This paragraph is not styled by a class.</p>
+      <p class="left">This paragraph is styled by the Left class.</p>
+      <p class="center">This paragraph is styled by the Center class.</p>
+      <p class="right">This paragraph is styled by the Right class.</p>
+
+      <!-- ID selector and link-state examples. -->
+      <b>This is normal bold</b><br>
+      <b id="headline">This bold text is styled</b>
+      <h2><a href="sample.html">Hover over this link</a></h2>
+
+      <!-- Experiment 9: cursor property examples. -->
+      <div class="cursor-box c1">Crosshair cursor</div>
+      <div class="cursor-box c2">Pointer cursor</div>
+      <div class="cursor-box c3">Move cursor</div>
+      <div class="cursor-box c4">Text cursor</div>
+      <div class="cursor-box c5">Wait cursor</div>
+      <div class="cursor-box c6">Help cursor</div>
+    </main>
+  </body>
+</html>

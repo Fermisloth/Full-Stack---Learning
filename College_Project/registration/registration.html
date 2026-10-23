@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Validation Lab</title>
+    <link rel="stylesheet" href="../online-bookstore/store.css">
+    <script src="validation.js" defer></script>
+  </head>
+  <body>
+    <!-- Experiments 5-7: registration fields and JavaScript validation. -->
+    <main class="form-card">
+      <h1>Registration Form</h1>
+      <p id="formMessage" class="message"></p>
+
+      <form name="registrationForm" onsubmit="return validateRegistration(event)">
+        <!-- Required text and password fields. -->
+        <label>Name <input name="name" type="text" placeholder="Minimum 6 alphabetic characters"></label>
+        <label>Password <input name="password" type="password" placeholder="Minimum 6 characters"></label>
+        <label>Email ID <input name="email" type="text" placeholder="name@domain.com"></label>
+        <label>Phone Number <input name="phone" type="text" placeholder="10 digits"></label>
+
+        <!-- Form action controls. -->
+        <div>
+          <button class="button" type="submit">Submit</button>
+          <button class="button secondary" type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

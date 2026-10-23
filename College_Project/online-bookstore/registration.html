@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register | BookNest</title>
+    <link rel="stylesheet" href="store.css">
+    <script src="../registration/validation.js" defer></script>
+  </head>
+  <body>
+    <!-- Experiment 5: complete registration form. -->
+    <main class="form-card">
+      <h1>BookNest Registration</h1>
+      <p id="formMessage" class="message"></p>
+
+      <form name="registrationForm" onsubmit="return validateRegistration(event)">
+        <!-- Text and password fields. -->
+        <div class="two-col">
+          <label>Name <input name="name" type="text"></label>
+          <label>Password <input name="password" type="password"></label>
+          <label>Email <input name="email" type="email"></label>
+          <label>Phone Number <input name="phone" type="text"></label>
+        </div>
+
+        <!-- Radio-button field. -->
+        <fieldset>
+          <legend>Sex</legend>
+          <label class="inline"><input type="radio" name="sex" value="male"> Male</label>
+          <label class="inline"><input type="radio" name="sex" value="female"> Female</label>
+        </fieldset>
+
+        <!-- Date of birth select boxes. -->
+        <label>Date of Birth
+          <div class="three-col">
+            <select name="day">
+              <option value="">Day</option><option>1</option><option>15</option><option>30</option>
+            </select>
+            <select name="month">
+              <option value="">Month</option><option>January</option><option>June</option><option>December</option>
+            </select>
+            <select name="year">
+              <option value="">Year</option><option>2000</option><option>2001</option><option>2002</option>
+            </select>
+          </div>
+        </label>
+
+        <!-- Language checkboxes and address field. -->
+        <fieldset>
+          <legend>Languages known</legend>
+          <label class="inline"><input type="checkbox" name="language" value="English"> English</label>
+          <label class="inline"><input type="checkbox" name="language" value="Telugu"> Telugu</label>
+          <label class="inline"><input type="checkbox" name="language" value="Hindi"> Hindi</label>
+          <label class="inline"><input type="checkbox" name="language" value="Tamil"> Tamil</label>
+        </fieldset>
+        <label>Address <textarea name="address" rows="4"></textarea></label>
+
+        <!-- Form action controls. -->
+        <div>
+          <button class="button" type="submit">Register</button>
+          <button class="button secondary" type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

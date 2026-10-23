@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Portfolio header and navigation. -->
+    <header>
+      <nav>
+        <a class="logo" href="#home">Aarav.dev</a>
+        <button id="menuButton" aria-label="Toggle menu">☰</button>
+        <div id="navLinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero component. -->
+      <section id="home" class="hero">
+        <p class="eyebrow">Web Designing Workshop</p>
+        <h1>Building useful things for the web.</h1>
+        <p>I am a computer science student learning to turn ideas into accessible, responsive experiences.</p>
+        <a class="button" href="#projects">See my work</a>
+      </section>
+
+      <!-- About component. -->
+      <section id="about">
+        <h2>About me</h2>
+        <p>I enjoy frontend development, thoughtful interfaces, and learning by building small projects.</p>
+      </section>
+
+      <!-- Skills component. -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="chips">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+        </div>
+      </section>
+
+      <!-- Projects component. -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+          <article>
+            <h3>BookNest</h3>
+            <p>A static online bookstore with catalogue and cart pages.</p>
+          </article>
+          <article>
+            <h3>Survey Form</h3>
+            <p>A clean form demonstrating accessible inputs and validation.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact form component. -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+          <label>Name <input required name="name"></label>
+          <label>Email <input required type="email" name="email"></label>
+          <label>Message <textarea required name="message"></textarea></label>
+          <button class="button">Send message</button>
+          <p id="contactMessage"></p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer component. -->
+    <footer>© 2026 Aarav.dev</footer>
+  </body>
+</html>
